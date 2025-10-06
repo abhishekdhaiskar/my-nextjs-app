@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nextjs-deployment
+  name: my-nextjs-app-deployment
   labels:
     app: nextjs
 spec:
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: nextjs
-          image: ghcr.io/YOUR_GITHUB_USERNAME/my-nextjs-app:latest
+          image: ghcr.io/abhishekdhaiskar/my-nextjs-app:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000
